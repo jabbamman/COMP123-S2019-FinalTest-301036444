@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace COMP123_S2019_FinalTest_301036444.Objects
 {
-    class Character
+    public class Character
     {
         // 
         public string Strength { get; set; }
@@ -30,7 +30,7 @@ namespace COMP123_S2019_FinalTest_301036444.Objects
         public int HitPoints { get; set; }
 
         // Chararcter Class
-        public string  CharacterClass { get; set; }
+        public CharacterClass Class { get; set; }
         public int Level { get; set; }
 
         // Equipment
