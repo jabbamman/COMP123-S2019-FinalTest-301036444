@@ -1,4 +1,5 @@
-﻿using COMP123_S2019_FinalTest_301036444.Views;
+﻿using COMP123_S2019_FinalTest_301036444.Objects;
+using COMP123_S2019_FinalTest_301036444.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,8 @@ namespace COMP123_S2019_FinalTest_301036444
     public static class Program
     {
         public static CharacterGenerator characterGenerator;
+        public static AboutBox aboutBox;
+        public static Character character;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -24,6 +27,8 @@ namespace COMP123_S2019_FinalTest_301036444
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             characterGenerator = new CharacterGenerator();
+            aboutBox = new AboutBox();
+            character = new Character();
             Application.Run(characterGenerator);
         }
     }
